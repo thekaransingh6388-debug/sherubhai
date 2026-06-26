@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>HINDUSTAN TRADER | Stock Market Telegram | NIFTY BANKNIFTY Options</title>
+    
+    <!-- ✅ META PIXEL CODE (ID: 1056534423613049) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1056534423613049');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1056534423613049&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- END META PIXEL CODE -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0d0d1a 0%, #0a0a0f 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Poppins', 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 16px;
+        }
+
+        .card {
+            max-width: 100%;
+            width: 100%;
+            background: rgba(18, 18, 30, 0.95);
+            backdrop-filter: blur(2px);
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 24px 20px 36px;
+        }
+
+        .channel-badge {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .logo-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #1a1a1a;
+            border: 2px solid #f59e0b;
+            box-shadow: 0 8px 20px rgba(245,158,11,0.3);
+            flex-shrink: 0;
+        }
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .channel-name h2 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff, #fcd34d);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .channel-name p {
+            color: #888888;
+            font-size: 0.75rem;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .verified {
+            background: #f59e0b20;
+            padding: 3px 10px;
+            border-radius: 30px;
+            font-size: 0.65rem;
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border: none;
+            padding: 16px 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 60px;
+            transition: all 0.2s ease;
+            box-shadow: 0 8px 20px rgba(245,158,11,0.4);
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+        .join-btn:hover {
+            background: linear-gradient(135deg, #d97706, #b45309);
+            transform: scale(0.98);
+            box-shadow: 0 4px 12px rgba(245,158,11,0.5);
+        }
+
+        .join-btn:active {
+            transform: scale(0.96);
+        }
+
+        .subscribe-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background: linear-gradient(135deg, #dc2626, #b91c1c, #991b1b);
+            border: none;
+            padding: 14px 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 60px;
+            transition: all 0.2s ease;
+            box-shadow: 0 6px 16px rgba(220, 38, 38, 0.3);
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            margin-top: 16px;
+            width: 100%;
+        }
+
+        .subscribe-btn:hover {
+            background: linear-gradient(135deg, #b91c1c, #991b1b, #7f1d1d);
+            transform: scale(0.98);
+        }
+
+        .subscribe-btn:active {
+            transform: scale(0.96);
+        }
+
+        .subscribe-btn:disabled {
+            opacity: 0.7;
+            transform: none;
+            cursor: default;
+        }
+
+        .top-button {
+            margin-bottom: 20px;
+        }
+
+        .bottom-button {
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            background: rgba(255,255,255,0.03);
+            padding: 12px 16px;
+            border-radius: 24px;
+            margin: 20px 0 20px 0;
+            border-left: 4px solid #f59e0b;
+            font-weight: 500;
+            color: #cccccc;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .points-section {
+            background: rgba(0,0,0,0.4);
+            border-radius: 28px;
+            padding: 20px 16px;
+            margin: 20px 0 0;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .points-section h3 {
+            color: #fbbf24;
+            font-size: 1rem;
+            margin-bottom: 16px;
+            text-align: center;
+            letter-spacing: 0px;
+        }
+
+        .point-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+            padding: 5px 0;
+        }
+
+        .point-icon {
+            font-size: 22px;
+            min-width: 32px;
+        }
+
+        .point-text {
+            color: #e0e0e0;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .point-text strong {
+            color: #fbbf24;
+            font-weight: 700;
+        }
+
+        .disclaimer {
+            background: #f59e0b10;
+            border-left: 3px solid #f59e0b;
+            padding: 10px 12px;
+            margin-top: 16px;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            color: #fcd34d;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .trust-badge {
+            text-align: center;
+            font-size: 0.65rem;
+            color: #666666;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        hr {
+            border-color: rgba(255,255,255,0.08);
+            margin: 20px 0 12px;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 0.65rem;
+            color: #444444;
+            margin-top: 8px;
+        }
+
+        .tracking-status {
+            text-align: center;
+            font-size: 0.6rem;
+            color: #4c9aff;
+            margin-top: 12px;
+            background: rgba(0,0,0,0.3);
+            padding: 4px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .status-wrapper {
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 20px 16px 30px;
+            }
+            .channel-name h2 {
+                font-size: 1.4rem;
+            }
+            .logo-circle {
+                width: 60px;
+                height: 60px;
+            }
+            .join-btn {
+                padding: 14px 10px;
+                font-size: 1rem;
+            }
+            .subscribe-btn {
+                padding: 12px 10px;
+                font-size: 0.95rem;
+            }
+            .point-text {
+                font-size: 0.85rem;
+            }
+            .tagline {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (min-width: 500px) {
+            .card {
+                max-width: 460px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="content">
+        <!-- Logo + Channel Name - HINDUSTAN TRADER -->
+        <div class="channel-badge">
+            <div class="logo-circle">
+                <img src="https://karanmetalabe.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-26-2026-10_30_29-PM.png" alt="HINDUSTAN TRADER">
+            </div>
+            <div class="channel-name">
+                <h2>HINDUSTAN TRADER</h2>
+                <p>📈 Stock Market Expert <span class="verified">✓ OFFICIAL TG</span></p>
+            </div>
+        </div>
+
+        <!-- ✅ BUTTON 1 - TOP TELEGRAM (NEW LINK) -->
+        <div class="top-button">
+            <a href="https://t.me/+T15l_KeVWPNlM2Jl" target="_blank" rel="noopener noreferrer" class="join-btn" id="topJoinBtn" data-position="top">
+                📲 JOIN TELEGRAM CHANNEL
+            </a>
+        </div>
+
+        <div class="tagline">
+            🎯 Professional Options & Index Trading | Smart Money Moves 🚀
+        </div>
+
+        <!-- Points Section -->
+        <div class="points-section">
+            <h3>⚡ NIFTY • BANKNIFTY • STOCK OPTIONS ⚡</h3>
+            
+            <div class="point-item">
+                <span class="point-icon">🎯</span>
+                <span class="point-text"><strong>✅ Get upto 150-350 Points Per Call</strong></span>
+            </div>
+            
+            <div class="point-item">
+                <span class="point-icon">📊</span>
+                <span class="point-text"><strong>✅ 85-95% Accuracy Ratio</strong></span>
+            </div>
+            
+            <div class="point-item">
+                <span class="point-icon">📞</span>
+                <span class="point-text"><strong>✅ 4-5 Premium Calls Daily</strong></span>
+            </div>
+            
+            <div class="point-item">
+                <span class="point-icon">🏆</span>
+                <span class="point-text"><strong>✅ 4 Best Trades for All Members</strong></span>
+            </div>
+            
+            <div class="disclaimer">
+                ⚠️ DISCLAIMER :- DAILY 2 FREE DEMO CALLS ✅
+            </div>
+        </div>
+
+        <!-- ✅ SUBSCRIBE BUTTON (with full event tracking) -->
+        <button id="subscribeButton" class="subscribe-btn">
+            🔔 SUBSCRIBE TO UPDATES 🔔
+        </button>
+
+        <!-- ✅ BUTTON 2 - BOTTOM TELEGRAM (NEW LINK) -->
+        <div class="bottom-button">
+            <a href="https://t.me/+T15l_KeVWPNlM2Jl" target="_blank" rel="noopener noreferrer" class="join-btn" id="bottomJoinBtn" data-position="bottom">
+                📲 JOIN TELEGRAM CHANNEL
+            </a>
+        </div>
+
+        <!-- Trust Signals -->
+        <div class="trust-badge">
+            <span>🔒 100% Free Channel</span>
+            <span>⏱️ Live Market Updates</span>
+            <span>🎯 Nifty/BankNifty Focus</span>
+            <span>⭐ 15k+ Active Members</span>
+        </div>
+
+        <hr />
+        <div class="footer-text">
+            📍 HINDUSTAN TRADER | Trade With Accuracy & Discipline
+        </div>
+        
+        <div class="status-wrapper">
+            <div class="tracking-status" id="trackingStatus">🔵 Analytics Active • Meta Pixel Ready</div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================== COMPLETE TRACKING SCRIPT ======================== -->
+<script>
+    (function() {
+        // ==================== CONFIGURATION ====================
+        const TELEGRAM_LINK = "https://t.me/+T15l_KeVWPNlM2Jl";
+        const TELEGRAM_CODE = "T15l_KeVWPNlM2Jl";
+        const EXPERT_NAME = "HINDUSTAN TRADER";
+        const PIXEL_ID = "1056534423613049";   // ✅ NEW PIXEL ID
+        
+        // Safe fbq call with fallback
+        function safeFbq() {
+            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                return fbq;
+            }
+            window.fbq = window.fbq || function() { console.log('[FBQ Fallback]', arguments); };
+            return window.fbq;
+        }
+        
+        // ---------- TELEGRAM BUTTON TRACKING ----------
+        function trackTelegramClick(event) {
+            if (this._trackingActive) return;
+            this._trackingActive = true;
+            setTimeout(() => { this._trackingActive = false; }, 800);
+            
+            const buttonPosition = this.getAttribute('data-position') || 'unknown';
+            
+            try {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    // Lead Event
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'Telegram_Channel_Join_HINDUSTAN_TRADER',
+                        content_category: 'Telegram_Invite_Link',
+                        content_type: 'telegram_channel',
+                        value: 1.5,
+                        currency: 'INR',
+                        method: 'telegram_click',
+                        button_position: buttonPosition,
+                        owner: EXPERT_NAME,
+                        telegram_code: TELEGRAM_CODE,
+                        pixel_id: PIXEL_ID
+                    });
+                    
+                    // InitiateContact Event
+                    fbqFunc('track', 'InitiateContact', {
+                        contact_method: 'Telegram_Channel',
+                        content_name: 'HINDUSTAN_TRADER_Telegram_Join',
+                        channel_type: 'NIFTY_BANKNIFTY_TRADING',
+                        position: buttonPosition,
+                        brand_owner: EXPERT_NAME,
+                        invite_code: TELEGRAM_CODE
+                    });
+                    
+                    // Custom Event
+                    fbqFunc('trackCustom', 'TelegramJoinClick_HINDUSTAN', {
+                        position_on_page: buttonPosition,
+                        owner: EXPERT_NAME,
+                        timestamp: new Date().toISOString(),
+                        channel_link: TELEGRAM_CODE,
+                        pixel: PIXEL_ID
+                    });
+                    
+                    // Update status
+                    const statusDiv = document.getElementById('trackingStatus');
+                    if (statusDiv) {
+                        statusDiv.innerHTML = '✅ Telegram Join Tracked • Lead Event Sent ✅';
+                        setTimeout(() => {
+                            if (statusDiv.innerHTML.includes('Lead Event Sent'))
+                                statusDiv.innerHTML = '🔵 Analytics Active • Meta Pixel Ready';
+                        }, 3000);
+                    }
+                    
+                    console.log(`✅ [Pixel ${PIXEL_ID}] Telegram join tracked from ${buttonPosition}`);
+                }
+            } catch(e) {
+                console.error('Pixel tracking error:', e);
+            }
+            return true;
+        }
+        
+        // ---------- SUBSCRIBE BUTTON TRACKING ----------
+        function handleSubscribeClick(event) {
+            event.preventDefault();
+            
+            const subBtn = document.getElementById('subscribeButton');
+            if (subBtn && subBtn.disabled) return;
+            
+            try {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    // Subscribe Event
+                    fbqFunc('track', 'Subscribe', {
+                        content_name: 'HINDUSTAN_TRADER_Market_Updates',
+                        content_category: 'NIFTY_BANKNIFTY_Options_Subscription',
+                        subscription_type: 'daily_free_calls',
+                        accuracy_rate: '85-95%',
+                        source: 'landing_page_card',
+                        owner: EXPERT_NAME,
+                        pixel_id: PIXEL_ID
+                    });
+                    
+                    // Lead Event
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'HINDUSTAN_TRADER_Update_Subscription',
+                        content_category: 'Stock_Market_Lead',
+                        value: 1,
+                        currency: 'INR',
+                        method: 'subscribe_button_click',
+                        lead_type: 'market_updates_subscription',
+                        owner_name: EXPERT_NAME,
+                        pixel: PIXEL_ID
+                    });
+                    
+                    // Custom Event
+                    fbqFunc('trackCustom', 'SubscribeButtonClick_HINDUSTAN', {
+                        location: 'main_card_center',
+                        user_action: 'click_subscribe_updates',
+                        timestamp_ms: Date.now(),
+                        trader: EXPERT_NAME,
+                        pixel: PIXEL_ID
+                    });
+                    
+                    // Contact Event
+                    fbqFunc('track', 'Contact', {
+                        contact_type: 'website_subscription',
+                        content_name: 'HINDUSTAN_TRADER_OptIn',
+                        channel: 'organic_landing',
+                        owner: EXPERT_NAME,
+                        pixel_id: PIXEL_ID
+                    });
+                    
+                    // Update status
+                    const statusDiv = document.getElementById('trackingStatus');
+                    if (statusDiv) {
+                        statusDiv.innerHTML = '🎯 SUBSCRIBE CONVERSION TRACKED! (Subscribe + Lead) 🎯';
+                        setTimeout(() => {
+                            if (statusDiv.innerHTML.includes('CONVERSION TRACKED'))
+                                statusDiv.innerHTML = '🔵 Analytics Active • Meta Pixel Ready';
+                        }, 4000);
+                    }
+                    
+                    console.log(`✅ [Pixel ${PIXEL_ID}] Subscribe button tracked: Subscribe + Lead + Custom + Contact`);
+                }
+            } catch(e) {
+                console.error('Subscribe pixel error:', e);
+            }
+            
+            // Show confirmation
+            alert("✅ SUBSCRIPTION CONFIRMED! ✅\n\nThank you for subscribing to HINDUSTAN TRADER\n\n📊 What you'll receive:\n• Daily NIFTY/BANKNIFTY calls (85-95% accuracy)\n• 4-5 observational calls daily\n• Stock Options insights & market analysis\n• FII/DII data & live updates\n\n🚀 Join Telegram for instant calls!");
+            
+            // Visual feedback
+            if (subBtn) {
+                const originalText = subBtn.innerHTML;
+                const originalBg = subBtn.style.background;
+                subBtn.innerHTML = "✅ SUBSCRIBED! THANK YOU ✅";
+                subBtn.style.background = "linear-gradient(135deg, #059669, #047857, #065f46)";
+                subBtn.disabled = true;
+                setTimeout(() => {
+                    subBtn.innerHTML = originalText;
+                    subBtn.style.background = originalBg;
+                    subBtn.disabled = false;
+                }, 4000);
+            }
+            return false;
+        }
+        
+        // ---------- Attach Event Listeners ----------
+        const topTeleBtn = document.getElementById('topJoinBtn');
+        const bottomTeleBtn = document.getElementById('bottomJoinBtn');
+        
+        if (topTeleBtn) {
+            topTeleBtn.href = TELEGRAM_LINK;
+            topTeleBtn.removeEventListener('click', trackTelegramClick);
+            topTeleBtn.addEventListener('click', trackTelegramClick);
+        }
+        
+        if (bottomTeleBtn) {
+            bottomTeleBtn.href = TELEGRAM_LINK;
+            bottomTeleBtn.removeEventListener('click', trackTelegramClick);
+            bottomTeleBtn.addEventListener('click', trackTelegramClick);
+        }
+        
+        const subscribeBtn = document.getElementById('subscribeButton');
+        if (subscribeBtn) {
+            subscribeBtn.removeEventListener('click', handleSubscribeClick);
+            subscribeBtn.addEventListener('click', handleSubscribeClick);
+        }
+        
+        // ---------- Scroll Depth Tracking ----------
+        let scrollDepthTracked = {25: false, 50: false, 75: false};
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolledPercent = (scrollTop / scrollHeight) * 100;
+            
+            if (scrolledPercent >= 25 && !scrollDepthTracked[25]) {
+                scrollDepthTracked[25] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_25', {page: 'HINDUSTAN_TRADER_LANDING', pixel: PIXEL_ID});
+                }
+            }
+            if (scrolledPercent >= 50 && !scrollDepthTracked[50]) {
+                scrollDepthTracked[50] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_50', {page: 'HINDUSTAN_TRADER_LANDING', pixel: PIXEL_ID});
+                }
+            }
+            if (scrolledPercent >= 75 && !scrollDepthTracked[75]) {
+                scrollDepthTracked[75] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_75', {page: 'HINDUSTAN_TRADER_LANDING', pixel: PIXEL_ID});
+                }
+            }
+        });
+        
+        // ---------- Time on Page Tracking ----------
+        let sessionStartTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeSpentSec = Math.round((Date.now() - sessionStartTime) / 1000);
+            if (timeSpentSec > 5) {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'TimeOnPage_HINDUSTAN', {
+                        seconds_spent: timeSpentSec,
+                        page_type: 'telegram_promo_landing',
+                        engaged: timeSpentSec > 30,
+                        owner: EXPERT_NAME,
+                        pixel: PIXEL_ID
+                    });
+                }
+            }
+        });
+        
+        // ---------- Page Load Tracking ----------
+        window.addEventListener('load', function() {
+            const fbqFunc = safeFbq();
+            if (typeof fbqFunc === 'function') {
+                fbqFunc('track', 'PageView', {
+                    content_name: 'HINDUSTAN_TRADER_LANDING_PAGE',
+                    market_focus: 'NIFTY_BANKNIFTY_OPTIONS',
+                    owner: EXPERT_NAME,
+                    telegram_channel: TELEGRAM_CODE,
+                    pixel_id: PIXEL_ID
+                });
+                
+                fbqFunc('trackCustom', 'HINDUSTAN_SessionStart', {
+                    session_id: Date.now().toString(36) + Math.random().toString(36).substr(2, 8),
+                    user_bucket: 'options_traders',
+                    device_category: window.innerWidth < 768 ? 'mobile' : 'desktop',
+                    trader_name: EXPERT_NAME,
+                    telegram_invite: TELEGRAM_CODE,
+                    pixel: PIXEL_ID
+                });
+            }
+            
+            const statusDiv = document.getElementById('trackingStatus');
+            if (statusDiv) {
+                statusDiv.innerHTML = `✅ All Events Active • Pixel ID: ${PIXEL_ID} ✅`;
+                setTimeout(() => {
+                    if (statusDiv.innerHTML.includes('Pixel ID'))
+                        statusDiv.innerHTML = `🔵 Analytics Active • Pixel ID: ${PIXEL_ID} | HINDUSTAN TRADER`;
+                }, 4000);
+            }
+            
+            console.log(`🚀 ${EXPERT_NAME} | Tracking Active | Pixel: ${PIXEL_ID}`);
+            console.log(`✅ Telegram Link: ${TELEGRAM_LINK}`);
+            console.log(`✅ Telegram Code: ${TELEGRAM_CODE}`);
+        });
+        
+        // Fallback if fbq not defined
+        if (typeof fbq === 'undefined') {
+            window.fbq = function() { console.log('fbq fallback:', arguments); };
+        }
+    })();
+</script>
+
+<!-- Final Verification & Hard Override -->
+<script>
+    (function finalCheck() {
+        const topBtn = document.getElementById('topJoinBtn');
+        const bottomBtn = document.getElementById('bottomJoinBtn');
+        const subBtn = document.getElementById('subscribeButton');
+        const newTelegramLink = "https://t.me/+T15l_KeVWPNlM2Jl";
+        const newPixelId = "1056534423613049";
+        
+        console.log(`🔍 Final Check (HINDUSTAN TRADER):`);
+        console.log(`✓ Top Telegram: ${topBtn ? 'OK' : 'MISSING'}`);
+        console.log(`✓ Bottom Telegram: ${bottomBtn ? 'OK' : 'MISSING'}`);
+        console.log(`✓ Subscribe Button: ${subBtn ? 'OK' : 'MISSING'}`);
+        console.log(`✓ Expert: HINDUSTAN TRADER`);
+        console.log(`✅ NEW Pixel ID: ${newPixelId}`);
+        console.log(`✅ NEW Telegram Link: ${newTelegramLink}`);
+        
+        // Force override if needed
+        if (topBtn && topBtn.href !== newTelegramLink) topBtn.href = newTelegramLink;
+        if (bottomBtn && bottomBtn.href !== newTelegramLink) bottomBtn.href = newTelegramLink;
+        
+        // Ensure pixel is active
+        if (typeof fbq !== 'undefined') {
+            console.log(`✅ Meta Pixel (${newPixelId}) active for HINDUSTAN TRADER with full tracking`);
+        } else {
+            console.warn('⚠️ fbq not available - check pixel code');
+        }
+    })();
+</script>
+
+</body>
+</html>
